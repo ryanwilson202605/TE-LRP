@@ -1,0 +1,33 @@
+# Python bytecode and build artifacts
+__pycache__/
+*.pyc
+build/
+dist/
+*.egg-info/
+
+# Test caches
+/.pytest_cache/
+
+# Runtime outputs
+/outputs/
+
+# Backup files
+*.bak
+
+# Local data and checkpoints
+/data/
+*.ckpt
+!/checkpoints/autobot.ckpt
+
+# Generated documents
+*.pdf
+
+# Local editor and agent configuration
+/AGENTS.md
+/.agents
+/.codex
+/.vscode
+.history/
+
+# Local worktrees
+/.worktrees/

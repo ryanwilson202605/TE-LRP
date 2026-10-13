@@ -1,0 +1,26 @@
+model_name: autobot
+
+num_modes: 6
+
+hidden_size: 256
+num_encoder_layers: 2
+num_decoder_layers: 2
+tx_hidden_size: 384
+tx_num_heads: 16
+dropout: 0.2
+
+entropy_weight: 1
+kl_weight: 1
+use_FDEADE_aux_loss: True
+
+max_epochs: 100
+learning_rate: 0.00075
+learning_rate_sched: [ 20, 40, 60, 80 ]
+train_batch_size: 128
+eval_batch_size: 128
+grad_clip_norm: 5
+
+max_num_agents: 15
+map_range: 100
+max_num_roads: 256
+max_points_per_lane: 20

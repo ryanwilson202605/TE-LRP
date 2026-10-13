@@ -1,0 +1,39 @@
+# Shared training and attribution settings; override paths from the command line.
+exp_name: autobot
+seed: 42
+device: cuda
+load_num_workers: 0
+shared_root: /mnt/disk1/shared_data
+output_root: ./outputs
+train_data_path: ["${shared_root}/data/merged_train"]
+val_data_path: ["${shared_root}/data/merged_val"]
+cache_path: "${output_root}/cache"
+max_data_num: null  # Maximum source scenes per directory; null reads all scenes.
+starting_frame: 0
+ckpt_path: null
+latest_ckpt: "${output_root}/checkpoints/latest.ckpt"
+best_ckpt: "${output_root}/checkpoints/best.ckpt"
+eval_ckpt_path: ./checkpoints/autobot.ckpt
+log_dir: "${output_root}/logs"
+past_len: 21
+future_len: 60
+trajectory_sample_interval: 1
+object_type: [VEHICLE]
+only_train_on_ego: true
+line_type: [lane, stop_sign, road_edge, road_line, crosswalk, speed_bump]
+masked_attributes: [z_axis, size]
+center_offset_of_map: [30.0, 0.0]
+attribution:
+  batch_size: 1
+  batch_start: 0
+  batch_limit: null
+  attribution_dir: "${output_root}/attributions"
+hydra:
+  run:
+    dir: "${output_root}/hydra/${now:%Y-%m-%d_%H-%M-%S}"
+  job:
+    chdir: false
+defaults:
+  - _self_
+  - method: autobot
+  - attribution: te_lrp
