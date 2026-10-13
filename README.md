@@ -258,8 +258,6 @@ python -m pytest -q tests
 
 Tests cover propagation rules, IIQ, prediction equivalence, ground-truth independence, entity aggregation, attribution similarity, data caching, and checkpoint restoration.
 
-These tests check implementation behavior; they do not establish reproduction of the paper's experimental results. Fresh-environment installation, official raw-data conversion, full training, and full-dataset execution have not been validated. Validation of the current attribution and similarity pipeline across all three datasets is not yet complete.
-
 ## Acknowledgments and licensing
 
 The original TE-LRP code and the authors-trained checkpoint at `checkpoints/autobot.ckpt` are released under the **GNU Affero General Public License, version 3 or any later version (AGPL-3.0-or-later)**; see [LICENSE](LICENSE). Third-party portions retain their original copyright and license notices listed below. Dataset downloads remain subject to their providers' terms.
