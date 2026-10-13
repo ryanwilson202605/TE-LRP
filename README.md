@@ -4,7 +4,7 @@
 
 TE-LRP explains each prediction mode's x and y endpoint coordinates separately. Signed input relevance is aggregated into two-dimensional agent and map attribution vectors, magnitudes, and normalized distributions. Cross-mode attribution similarity is computed from these distributions using the complement of the base-2 Jensen-Shannon distance.
 
-This repository provides AutoBot training, prediction, and TE-LRP for **AV2, Waymo Open Motion, and nuScenes** in ScenarioNet PKL format.
+This repository presents the method implementation of TE-LRP for **AutoBot**: predicted-endpoint relevance propagation, the input-independent query (IIQ) rule, entity-level attribution aggregation, and cross-mode attribution similarity. Data loading, prediction, and training utilities support running the method on **AV2, Waymo Open Motion, and nuScenes** in ScenarioNet PKL format.
 
 **Official data download → ScenarioNet conversion → PKL preprocessing and caching → AutoBot prediction → TE-LRP attribution and similarity**
 
