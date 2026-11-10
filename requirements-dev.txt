@@ -1,0 +1,2 @@
+# Install the runtime environment with environment.yml before adding test tools.
+pytest==8.4.2
