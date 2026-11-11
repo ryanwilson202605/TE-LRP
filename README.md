@@ -24,9 +24,6 @@ TE-LRP attributes AutoBot's predicted endpoints to **agents and map entities** a
 
 This repository provides AutoBot training, prediction, and TE-LRP for **AV2, Waymo Open Motion, and nuScenes** in ScenarioNet PKL format.
 
-**Paper:** Characterizing All-Miss Outcomes in Multimodal Trajectory Prediction through Cross-Mode Attribution<br>
-Liguo Zhang, Lei Lian, Yasushi Yamaguchi, Rui Shi.
-
 <p align="center">
   <a href="assets/figures/2.5d.gif"><img src="assets/figures/2.5d.gif" width="40.05%" alt="Recorded intersection motion in a 2.5D view, with labeled vehicles and map entities and six prediction trajectories."></a>
   <a href="assets/figures/3d.webp"><img src="assets/figures/3d.webp" width="56.95%" alt="The same intersection scene in 3D, with labeled entities and six prediction trajectories."></a>
