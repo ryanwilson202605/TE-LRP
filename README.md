@@ -34,7 +34,7 @@ This repository provides AutoBot training, prediction, and TE-LRP for **AV2, Way
   <a href="assets/figures/similarity.png"><img src="assets/figures/similarity.png" width="33.02%" alt="The supplied six-mode attribution similarity matrix, with self-similarities masked in gray."></a>
 </p>
 
-Recorded scene motion is shown with tracking gaps filled for smooth playback and six prediction trajectories. A-labels identify vehicles and M-labels identify map entities. The lower panels show entity attribution distributions and the supplied cross-mode similarity matrix.
+A-labels identify vehicles and M-labels identify map entities. The lower panels show entity attribution distributions and the supplied cross-mode similarity matrix.
 
 ## Overview
 
